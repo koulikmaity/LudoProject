@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<htnl>
+    <head>
+        <title>LUDO Project</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>JS LUDO</h1>
+
+            <div class="dice">
+               <p>PLAYER 1</p> 
+                <img src="image1.png" id="play1">
+            </div>
+
+            <div class="dice">
+                <p>PLAYER 2</p> 
+                <img src="image3.png" id="play2">
+            </div>
+            <div>
+         <button onclick="ludogame()">Click Me</button>
+        </div>
+    </div>
+    <script>
+        ludogame =() => {
+
+     
+        const check1 = Math.floor(Math.random() *6)+1;
+        const play1dice = `image${check1}.png`;
+        document.getElementById('play1').setAttribute('src',play1dice);
+            
+        const check2 = Math.floor(Math.random() *6)+1;
+        const play2dice = `image${check2}.png`;
+        document.getElementById('play2').setAttribute('src',play2dice);
+
+        if(check1>check2)
+        {
+            document.querySelector('h1').innerHTML="Player 1 WON :)";
+        }
+        else if(check1<check2)
+        {
+            document.querySelector('h1').innerHTML="Player 2 WON :)";
+        }
+        else{
+            document.querySelector('h1').innerHTML="DRAW :)";
+        }
+    } 
+    </script>
+    </body>
+</htnl>

@@ -1,0 +1,38 @@
+body{
+    background-color:rgb(13, 69, 126);
+    
+}
+
+.container
+{   width:70%;
+    margin:auto;
+    text-align:center;
+}
+.dice
+{   
+    text-align:center;
+    display: inline-block;
+}
+h1{
+    color: #f6b93b;
+    font-style:italic;
+    font-size: 60px;
+    text-shadow:5px 3px white;
+}
+p{
+    font-family: 'Literata', serif;
+    font-size:30px;
+    color:coral;
+    text-shadow:2px 0 wheat;
+}
+button{
+    padding:8px;
+    font-size:18px;
+    font-style:oblique;
+    background-color:rgb(53, 174, 204);
+    color:white;
+    border:0;
+}
+img{
+    width:70%;
+}
